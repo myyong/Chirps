@@ -1,0 +1,19 @@
+
+2015.04
+
+CHIRPS daily
+Thanks to feedback from Marcel Kuettel, we realized a problem in daily CHIRPS for the CPC-IR time period, 2000 to present. There was a problem creating the daily percent cold cloud duration (%CCD) map used in the downscaling. Places with missing IR data were set to zero instead of missing. Anywhere this happened, the precipitation was set to zero. This was always a problem for Eastern Australia/Indonesia/Japan, where a gap between two geostationary satellites exists. There were a small number of times this problem occurred outside of these particular areas. Browse .png images of daily %CCD before the fix:
+
+     	ftp://chg-ftpout.geog.ucsb.edu/pub/org/chg/products/CHIRPS-2.0/diagnostics/CPC-IR_perctCCD_pngs/
+
+under the subdirectories
+	all_days_by_month
+	singleProblemDays_outsideAustralia
+
+If your region of interest falls within the negative (yellow) areas, you should re-acquire the daily data for that entire month as problems with a given day effect the partitioning of precipitation among the other days in that month. 
+
+
+
+
+
+
